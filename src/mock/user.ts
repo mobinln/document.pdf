@@ -16,6 +16,7 @@ function createRandomUser(): userType {
   };
 }
 
-export function createRandomUsers(count = 100) {
+export function createRandomUsers() {
+  const count = faker.number.int({ min: 20, max: 120 });
   return faker.helpers.multiple(createRandomUser, { count });
 }

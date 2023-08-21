@@ -1,0 +1,36 @@
+/* Dark background */
+nav {
+  display: flex;
+  gap: 8px;
+  background-color: #222;
+}
+
+/* Dark links */
+nav a {
+  color: #ddd;
+  padding: 8px;
+}
+
+/* Change text color on hover */
+nav a:hover {
+  color: #fff;
+}
+
+/* Active link style */
+nav a.active {
+  background-color: #fff;
+  color: #444;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  /* Make flex items stack vertically */
+  nav {
+    flex-direction: column;
+  }
+
+  /* Center align the links */
+  nav a {
+    text-align: center;
+  }
+}
